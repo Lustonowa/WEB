@@ -16,7 +16,7 @@ export default function Catalog({ searchInput = "" }) {
   const [searchFilter, setSearchFilter] = useState("");
 
   const [products, setProducts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
   function handleApplyFilters() {
@@ -37,6 +37,8 @@ export default function Catalog({ searchInput = "" }) {
           size: sizeFilter,
           sort: sortOrder,
         });
+
+		  await new Promise((resolve) => setTimeout(resolve, 1000));
 
         const withImages = apiProducts.map((p) => {
           const local = INITIAL_CATALOG_ITEMS.find((item) => item.id === p.id);

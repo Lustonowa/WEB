@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="footer__container">
         <div className="footer__top">
           <div className="footer__brand">
-            <h3 className="footer__title title">Branding stuff</h3>
+            <h3 className="footer__title title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
 
             <p className="footer__description">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
@@ -42,11 +42,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="footer__bottom">
-          <small className="footer__copyright">
-            2025 Ihor Prokop © Copyright all rights reserved
-          </small>
-        </div>
       </div>
     </footer>
   );

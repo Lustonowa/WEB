@@ -25,7 +25,7 @@ export default function FilterBar({
             options={[
               { value: "all", label: "All types" },
               { value: "drink", label: "Drinks" },
-              { value: "spread", label: "Spreads" },
+              { value: "vegatable", label: "Vegatables" },
             ]}
             onChange={(e) => onTypeChange(e.target.value)}
           />

@@ -1,4 +1,4 @@
-import HeroImage from "../../assets/images/HomePageHero/GroceryBasket.jpg";
+import HeroImage from "../../assets/images/HomePageHero/Grocery.jpg";
 
 export default function Hero() {
   return (
@@ -10,12 +10,11 @@ export default function Hero() {
 
         <div className="hero__content">
           <h1 className="hero__title title">
-            Groceries delivered in 60 minutes
+            Groceries for your fridge
           </h1>
 
           <div className="hero__description">
-            Fresh fruit, dairy, bread and 2,000+ more items. Order online — we
-            deliver from the nearest store.
+            Fresh fruits, vegatables, cheese and more for you. Always have a full fridge.
           </div>
         </div>
       </div>

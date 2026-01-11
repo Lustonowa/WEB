@@ -1,52 +1,55 @@
 import { useState } from "react";
 import PrimaryButton from "../Button/PrimaryButton";
 
+import breakfast from "../../assets/images/HomePageCards/breakfast.jpg";
+import snacks from "../../assets/images/HomePageCards/snacks.jpg";
 import pasta from "../../assets/images/HomePageCards/pasta.jpg";
+import vegetable from "../../assets/images/HomePageCards/Vegatables.jpg";
 import fruits from "../../assets/images/HomePageCards/fruits.jpg";
-import honeyCheese from "../../assets/images/HomePageCards/honey-cheese.jpg";
+import Cheese from "../../assets/images/HomePageCards/cheese.jpg";
 
 const cards = [
   {
     id: 1,
-    title: "Dinner Tonight",
+    title: "Are you hungry?",
     description:
-      "Ready recipe kits in 20 minutes: pasta, salad, chicken & veggies.",
+      "Fresh ingredients, easy recipes: pasta, chicken & veggies",
     image: pasta,
-    alt: "Spaghetti topped with tomato-basil sauce in a white bowl.",
+    alt: "Pasta topped with tomato-basil sauce in a white bowl.",
   },
   {
     id: 2,
-    title: "-25% Fruit of the Week",
-    description: "Strawberries, bananas, kiwis — while in season!",
+    title: "Exotic fruits straight to your home",
+    description: "Dragon fruit, papaya, and carambola — fresh and in season!",
     image: fruits,
     alt: "Vibrant mix of tropical fruits—dragon fruit, papaya, durian, kumquats.",
   },
   {
     id: 3,
-    title: "Local Producers",
-    description: "Honey, cheeses, jams from nearby farms.",
-    image: honeyCheese,
-    alt: "Creamy brie with honey, almonds, and walnuts on rustic paper.",
+    title: "For turophiles",
+    description: "Cheeses from around the world.",
+    image: Cheese,
+    alt: "Cheeses mmmmmm.",
   },
   {
     id: 4,
     title: "Late-night snacks",
     description: "Chips, chocolate and more for movie nights.",
-    image: pasta,
-    alt: "Bowl of snacks.",
+    image: snacks,
+    alt: "Snacks chips, chocolate.",
   },
   {
     id: 5,
-    title: "Weekly veggies box",
+    title: "Straight from farms.",
     description: "Seasonal vegetables from local farmers.",
-    image: fruits,
+    image: vegetable,
     alt: "Fresh vegetables.",
   },
   {
     id: 6,
-    title: "Breakfast essentials",
-    description: "Milk, eggs, bread and cereals.",
-    image: honeyCheese,
+    title: "Breakfast, elevated.",
+    description: "Garden-fresh veggies, exotic fruits & gourmet essentials — delivered.",
+    image: breakfast,
     alt: "Breakfast set.",
   },
 ];
