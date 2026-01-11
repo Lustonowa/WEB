@@ -1,0 +1,34 @@
+/* ============================================================================================================================ */
+/* INNOVATIVE */
+
+.innovative {
+    background-color: #26353B;
+    padding-block-start: 4.125rem;
+    padding-block-end: 4.875rem
+}
+
+.innovative__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.innovative__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+@media (max-width: 638px) {
+    .innovative__content {
+        flex-wrap: wrap;
+    }
+}
+
+.innovative__description {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    font-weight: 400;
+    flex-basis: 23.75rem;
+    font-weight: 300;
+}

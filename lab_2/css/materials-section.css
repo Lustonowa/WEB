@@ -1,0 +1,77 @@
+/* ============================================================================================================================ */
+/* MATERIALS */
+
+.title {
+    font-family: "Merri weather", serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+}
+
+.materials__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3.125rem;
+}
+
+.materials__content {
+    flex-basis: 25rem;
+    padding-block: 3.125rem;
+}
+
+.materials__title {
+    color: #222F33;
+    margin-block-end: 0.625rem;
+}
+
+.materials__description {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: #646D70;
+    margin-block-end: 2.5rem;
+}
+
+.materials__media {
+    min-height: 100%;
+}
+
+@media (max-width: 836px) {
+    .materials__container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .materials__content {
+        flex-basis: auto;
+        padding-block: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .materials__btn {
+        width: 100%;
+        padding-block: 1rem;
+    }
+}
+
+.materials__btn {
+    animation: fullWidth 2s infinite;
+}
+
+.materials__btn {
+  width: 8.125rem;
+  animation: fullWidth 2s infinite;
+}
+
+@keyframes fullWidth {
+  0% {
+    width: 8.125rem;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 8.125rem;
+  }
+}

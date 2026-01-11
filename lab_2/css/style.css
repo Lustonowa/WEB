@@ -1,0 +1,70 @@
+@import url("reset.css");
+
+@import url("header.css");
+@import url("hero-section.css");
+@import url("materials-section.css");
+@import url("innovative-section.css");
+@import url("qualities-section.css");
+@import url("footer.css");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > main {
+  flex-grow: 1;
+}
+
+[class*="__container"] {
+  max-width: 830px;
+  padding-inline: 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 2000px) and (max-width: 3200px) {
+  html {
+    font-size: 21px;
+  }
+  [class*="__container"] {
+    max-width: 1107px;
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 3200px) {
+  html {
+    font-size: 32px;
+  }
+  [class*="__container"] {
+    max-width: 1660px;
+    padding-inline: 30px;
+  }
+}
+
+
+@media (min-width: 2000px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 3200px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+

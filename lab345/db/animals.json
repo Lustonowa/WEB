@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SdT96Cd2",
+    "title": "333333",
+    "description": "qwetrtywgz",
+    "expense": 100,
+    "type": "cat",
+    "img": "img/cat.jpg",
+    "createdAt": "2025-12-17T10:01:22.193Z",
+    "updatedAt": "2025-12-17T10:02:10.990Z"
+  },
+  {
+    "id": "quH3U8PB",
+    "title": "12345",
+    "description": "asderqrtqggd",
+    "expense": 1000,
+    "type": "hamster",
+    "img": "img/hamster.jpg",
+    "createdAt": "2025-12-17T10:00:41.300Z",
+    "updatedAt": "2025-12-17T10:00:48.357Z"
+  },
+  {
+    "id": "OrrWh7LN",
+    "title": "Parrot",
+    "description": "a simple parrot",
+    "expense": 50,
+    "type": "parrot",
+    "img": "img/parrot.jpg",
+    "createdAt": "2025-10-26T22:58:52.737Z",
+    "updatedAt": "2025-10-26T22:58:52.737Z"
+  },
+  {
+    "id": "6UPAKT-Q",
+    "title": "Cat",
+    "description": "A simple cat",
+    "expense": 120,
+    "type": "cat",
+    "img": "img/cat.jpg",
+    "createdAt": "2025-10-26T22:56:56.027Z",
+    "updatedAt": "2025-10-26T22:56:56.027Z"
+  }
+]

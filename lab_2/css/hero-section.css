@@ -1,0 +1,80 @@
+/* ============================================================================================================================ */
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/hero__bg.png") no-repeat center/cover;
+    z-index: 1;
+}
+
+.hero__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 673px) {
+    .hero__container {
+        justify-content: center;
+    }
+
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 0.75rem;
+    flex-basis: 27.5rem;
+}
+
+.hero__title {
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.hero__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.hero__play-video {
+    display: flex;
+    align-items: center;
+}
+
+.play-video__text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.play-video__link svg path {
+    transition: fill 0.2s ease-in-out;
+}
+
+@media (any-hover: hover) and (pointer: fine) {
+    .play-video__link:hover svg path:first-child {
+        fill: red;
+    }
+}

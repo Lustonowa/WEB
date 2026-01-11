@@ -1,0 +1,354 @@
+@import url("reset.css");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*="__container"] {
+    max-width: 830px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+
+
+/* ============================================================================================================================ */
+/* HEADER */
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    color: white;
+    padding-block: 1.25rem;
+}
+
+.header__container {
+    display: flex;
+    column-gap: 2.5rem;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo__text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.header__content {
+    display: flex;
+    column-gap: 2.6875rem;
+    row-gap: 0.625rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 2.5rem;
+    row-gap: 0.625rem;
+}
+
+.menu__link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu__link::before {
+    position: absolute;
+    content: "";
+    bottom: -0.1875rem;
+    left: 0;
+    width: 0;
+    height: 0.0625rem;
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+}
+
+.menu__link:hover::before {
+    width: 100%;
+}
+
+.btn {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0.625rem 1.375rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn--filled {
+    border: 1px solid white;
+    background-color: white;
+    color: #606B74;
+    transition: border-color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+}
+
+.btn--filled:hover {
+    background-color: transparent;
+    border-color: #606B74;
+}
+
+.btn--transparent {
+    border: 1px solid #606B74;
+    transition: background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    color: #606B74;
+}
+
+.btn--transparent:hover {
+    background-color: #606B74;
+    color: white;
+}
+
+
+/* ============================================================================================================================ */
+/* HERO */
+
+.hero {
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background: url("../img/hero__bg.png") no-repeat center/cover;
+    z-index: 1;
+}
+
+.hero__container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 0.75rem;
+    flex-basis: 27.5rem;
+}
+
+.hero__title {
+    font-size: 1.875rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.hero__subtitle {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.hero__play-video {
+    display: flex;
+    align-items: center;
+}
+
+.play-video__text {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.play-video__link svg path {
+    transition: fill 0.2s ease-in-out;
+}
+
+.play-video__link:hover svg path:first-child {
+    fill: red;
+}
+
+
+/* ============================================================================================================================ */
+/* MATERIALS */
+
+.title {
+    font-family: "Merri weather", serif;
+    font-size: 1.875rem;
+    font-weight: 900;
+}
+
+.materials__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 3.125rem;
+}
+
+.materials__content {
+    flex-basis: 25rem;
+}
+
+.materials__title {
+    color: #222F33;
+    margin-block-end: 0.625rem;
+}
+
+.materials__description {
+    font-size: 0.875rem;
+    line-height: 1.8;
+    color: #646D70;
+    margin-block-end: 2.5rem;
+}
+
+
+/* ============================================================================================================================ */
+/* INNOVATIVE */
+
+.innovative {
+    background-color: #26353B;
+    padding-block-start: 4.125rem;
+    padding-block-end: 4.875rem
+}
+
+.innovative__container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.innovative__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.innovative__description {
+    font-size: 0.875rem;
+    line-height: 1.7;
+    font-weight: 400;
+    flex-basis: 23.75rem;
+    font-weight: 300;
+}
+
+
+/* ============================================================================================================================ */
+/* QUALITIES */
+
+.qualities {
+    padding-block: 5rem;
+}
+
+.qualities__container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5rem;
+}
+
+.qualities__content {
+    flex-basis: 23.125rem;
+}
+
+.qualities__list {
+    display: grid;
+    grid-template-columns: repeat(2, 155px);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 3.75rem;
+    row-gap: 2.3125rem;
+}
+
+.qualities__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4375rem;
+}
+
+.qualities__title {
+    font-size: 1.125rem;
+    color: #222F33;
+}
+
+.qualities__description {
+    color: #646D70;
+    font-size: 0.75rem;
+    line-height: 1.8;
+    opacity: 0.7;
+}
+
+
+/* ============================================================================================================================ */
+/* FOOTER */
+
+.footer {
+    background-color: #222F33;
+    padding-block: 2.5rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 7.5rem;
+    max-width: 900px;
+}
+
+.footer__adress>a {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.footer__adress:hover>a {
+    opacity: 1;
+}
+
+.footer__policy-links {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.policy-link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.policy-link:hover {
+    opacity: 1;
+}

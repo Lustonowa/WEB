@@ -1,0 +1,256 @@
+/* ============================================================================================================================ */
+/* HEADER */
+.header__button {
+    position: relative;
+    z-index: 6;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: transparent;
+    color: white;
+    padding-block: 1.25rem;
+}
+
+.header__container {
+    display: flex;
+    column-gap: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.3125rem;
+    position: relative;
+    z-index: 50;
+    flex-shrink: 0;
+}
+
+.logo__text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+
+.header__content {
+    display: flex;
+    column-gap: 2.6875rem;
+    row-gap: 0.625rem;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 6;
+}
+
+.menu__list {
+    display: flex;
+    column-gap: 2.5rem;
+    row-gap: 0.625rem;
+}
+
+.menu__link {
+    font-size: 0.75rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.menu__link::before {
+    position: absolute;
+    content: "";
+    bottom: -0.1875rem;
+    left: 0;
+    width: 0;
+    height: 0.125rem;
+    background-color: white;
+    transition: width 0.2s ease-in-out;
+}
+
+.btn {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.2;
+    padding: 0.625rem 1.375rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn--filled {
+    border: 1px solid white;
+    background-color: white;
+    color: #606B74;
+    transition: border-color 0.2s ease-in-out,
+        background-color 0.2s ease-in-out;
+}
+
+.btn--transparent {
+    border: 1px solid #606B74;
+    transition: background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out;
+    color: #606B74;
+}
+
+.header__burger {
+    width: 30px;
+    height: 18px;
+    position: relative;
+    z-index: 6;
+    cursor: pointer;
+    display: none;
+}
+
+.header__burger::before,
+.header__burger::after,
+.header__burger span {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s;
+    background-color: black;
+}
+
+.header__burger::before {
+    top: 0;
+}
+
+.header__burger::after {
+    bottom: 0;
+}
+
+.header__burger span {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-open .header__burger span {
+    width: 0;
+}
+
+.menu-open .header__burger::before {
+    top: 50%;
+    transform: rotate(-45deg) translateY(-2px);
+}
+
+.menu-open .header__burger::after {
+    bottom: 50%;
+    transform: rotate(45deg) translateY(2px);
+}
+
+@media (max-width: 640px) {
+    .logo-header__text {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .header__menu {
+        position: fixed;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        right: -100%;
+        top: 0;
+        z-index: -1;
+        background-color: #1a1a1a;
+        padding: 90px 15px 30px 15px;
+        transition: all 0.3s;
+        display: flex;
+        row-gap: 2rem;
+    }
+
+    .header__menu::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        z-index: -1;
+        height: 65px;
+        transition: all 0.3s;
+        background-color: white;
+    }
+
+    .menu-open .header__menu,
+    .menu-open .header__menu::before {
+        right: 0;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__container {
+        justify-content: space-between;
+    }
+
+    .header__btn {
+        position: relative;
+        z-index: 10;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 2rem;
+    }
+
+    .menu__link {
+        font-size: 2rem;
+    }
+
+    .logo__text {
+        display: block;
+    }
+
+    .header__btn {
+        padding-block: 1rem;
+    }
+}
+
+@media (any-hover: hover) and (pointer: fine) {
+    .menu__link:hover::before {
+        width: 100%;
+    }
+
+    .btn--filled:hover {
+        background-color: transparent;
+        border-color: #606B74;
+    }
+
+    .btn--transparent:hover {
+        background-color: #606B74;
+        color: white;
+    }
+}
+
+.logo-header__text--visible {
+    display: block;
+    color: black;
+    transition: color 0.5s ease-in-out;
+}
+
+.logo-header__svg path {
+    fill: white;
+    transition: none;
+}
+
+.menu-open .logo-header__svg path {
+    fill: black;
+    transition: fill 0.5s ease;
+}
+
+.logo-header__svg {
+    width: 2.0625rem;
+    height: 1.625rem;
+}
